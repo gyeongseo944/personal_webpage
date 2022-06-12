@@ -1,0 +1,36 @@
+.back_svg {
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  opacity: 0;
+  animation: fadeIn 2s linear both;
+  animation-delay: 1s;
+}
+
+.show {
+  fill: none;
+  opacity: 0.3;
+  stroke: white;
+  stroke-width: 12;
+}
+
+.draw {
+  fill: none;
+  opacity: 0.4;
+  stroke: #ffd700;
+  stroke-width: 4;
+  stroke-miterlimit: 18;
+  stroke-dasharray: 200;
+  stroke-dashoffset: 800;
+  animation: draw 15s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 1600;
+  }
+}
