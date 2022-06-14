@@ -79,6 +79,11 @@
         content:'CONTACT';
       }
     }
+    a.skills_link{
+      &:after{
+        content:'SKILLS';
+      }
+    }
     a.active{
       svg{
         color:#ffd700;

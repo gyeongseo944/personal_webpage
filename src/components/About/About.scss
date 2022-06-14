@@ -5,17 +5,11 @@
 }
 
 .cubespinner {
-  // animation-name: spincube;
-  // animation-timing-function: ease-in-out;
-  // animation-iteration-count: infinite;
-  // animation-duration: 12s;
-  // transform-origin: 100px 100px 0;
-
-  // animation-name: rotate;
-  // animation-timing-function: ease-in-out;
-  // animation-iteration-count: infinite;
-  // animation-duration: 12s;
-  // transform-origin: 100px 100px 0;
+  animation-name: spincube;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 12s;
+  transform-origin: 100px 100px 0;
   
   transform-style: preserve-3d;
   margin-left: calc(50% - 100px);
@@ -34,68 +28,44 @@
     box-shadow: 0 0 20px 0px lightyellow;
   }
 
-  // .face1 {
-  //   transform: translateZ(150px);
-  // }
-  // .face2 {
-  //   transform: rotateY(90deg) translateZ(150px);
-  // }
-  // .face3 {
-  //   transform: rotateY(90deg) rotateX(90deg) translateZ(150px);
-  // }
-  // .face4 {
-  //   transform: rotateY(180deg) rotateZ(90deg) translateZ(150px);
-  // }
-  // .face5 {
-  //   transform: rotateY(-90deg) rotateZ(90deg) translateZ(150px);
-  // }
-  // .face6 {
-  //   transform: rotateX(-90deg) translateZ(150px);
-  // }
   .face1 {
     transform: translateZ(150px);
   }
   .face2 {
-    transform: rotateY(180deg) translateZ(150px);
-  }
-  .face3 {
-    transform: rotateY(-90deg) translateZ(150px);
-  }
-  .face4 {
     transform: rotateY(90deg) translateZ(150px);
   }
+  .face3 {
+    transform: rotateY(90deg) rotateX(90deg) translateZ(150px);
+  }
+  .face4 {
+    transform: rotateY(180deg) rotateZ(90deg) translateZ(150px);
+  }
   .face5 {
-    transform: rotateX(90deg)  translateZ(150px);
+    transform: rotateY(-90deg) rotateZ(90deg) translateZ(150px);
   }
   .face6 {
     transform: rotateX(-90deg) translateZ(150px);
   }
 }
 
-// @keyframes spincube {
-//   to {
-//     transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) ;
-//   }
-//   16% {
-//     transform: rotateY(-90deg);
-//   }
-//   33% {
-//     transform: rotateY(-90deg) rotateZ(90deg);
-//   }
-//   50% {
-//     transform: rotateY(-180deg) rotateZ(90deg);
-//   }
-//   66% {
-//     transform: rotateY(-270deg) rotateX(90deg);
-//   }
-//   83% {
-//     transform: rotateX(90deg);
-//   }
-// }
-
-
-@keyframes rotate {
-  100%{
-    transform: rotate3d(1,1,1,360deg);
+@keyframes spincube {
+  to {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) ;
+  }
+  16% {
+    transform: rotateY(-90deg);
+  }
+  33% {
+    transform: rotateY(-90deg) rotateZ(90deg);
+  }
+  50% {
+    transform: rotateY(-180deg) rotateZ(90deg);
+  }
+  66% {
+    transform: rotateY(-270deg) rotateX(90deg);
+  }
+  83% {
+    transform: rotateX(90deg);
   }
 }
+

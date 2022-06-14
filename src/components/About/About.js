@@ -24,22 +24,22 @@ const About = () => {
           </h1>
           <p>자기소개 자기소개</p>
           <p align="LEFT">자기소개 자기소개</p>
-          <p>자기소개 자기소개 (나중에 수정) &lt; 한글 폰트 찾기</p>
+          <p>자기소개 자기소개 (나중에 수정) &lt; 한글 폰트 찾기..</p>
         </div>
 
         <div className="stage_cube_cont">
           <div className="cubespinner">
             <div className="face1">
-              <FontAwesomeIcon icon={faNode} color="#88DE63" />
-            </div>
-            <div className="face2">
               <FontAwesomeIcon icon={faHtml5} color="#F06529" />
             </div>
+            <div className="face2">
+              <FontAwesomeIcon icon={faNode} color="#88DE63" />
+            </div>
             <div className="face3">
-              <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
+              <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
             </div>
             <div className="face4">
-              <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
+              <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
             </div>
             <div className="face5">
               <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
