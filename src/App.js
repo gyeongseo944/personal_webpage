@@ -4,6 +4,7 @@ import Layout from "./components/Layout";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Skills from "./components/Skills/Skills";
+import Portfolio from "./components/Portfolio/Portfolio";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="skills" element={<Skills />} />
+          <Route path="portfolio" element={<Portfolio />} />
         </Route>
       </Routes>
     </>

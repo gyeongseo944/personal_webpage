@@ -1,13 +1,11 @@
 import "./Sidebar.scss";
 import React from "react";
-import logoG1 from "../../assets/images/logo_G1.png";
-import logoSub1 from "../../assets/images/logo_sub1.png";
 import logoG2 from "../../assets/images/logo_G2.png";
 import logoSub2 from "../../assets/images/logo_sub2.png";
 import { Link, NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCubes, faEnvelope, faHome, faUser } from "@fortawesome/free-solid-svg-icons";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faBuffer } from "@fortawesome/free-brands-svg-icons";
 
 const Sidebar = () => {
   return (
@@ -25,6 +23,9 @@ const Sidebar = () => {
         </NavLink>
         <NavLink exact="true" activeclassname="active" className="skills_link" to="/skills">
           <FontAwesomeIcon icon={faCubes} color="#4d4d4e" />
+        </NavLink>
+        <NavLink exact="true" activeclassname="active" className="portfolio_link" to="/portfolio">
+          <FontAwesomeIcon icon={faBuffer} color="#4d4d4e" />
         </NavLink>
         <NavLink exact="true" activeclassname="active" className="contact_link" to="/contact">
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />

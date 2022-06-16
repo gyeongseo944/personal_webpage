@@ -26,7 +26,7 @@ const Skills = () => {
     <>
       <div className="container skills_page">
         <div className="text_zone">
-          <h1 className="TEST">
+          <h1>
             <AnimatedLetters letterClass={letterClass} strArray={["Skills", " ", "&", " ", "Experience"]} idx={15} />
           </h1>
           <p>자기소개 자기소개</p>

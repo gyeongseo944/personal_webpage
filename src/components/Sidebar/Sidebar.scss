@@ -84,6 +84,11 @@
         content:'SKILLS';
       }
     }
+    a.portfolio_link{
+      &:after{
+        content:'PROJECTS';
+      }
+    }
     a.active{
       svg{
         color:#ffd700;
