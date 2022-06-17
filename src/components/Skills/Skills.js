@@ -13,6 +13,7 @@ import jquery from "../../assets/images/icons/jquery.png";
 import socket from "../../assets/images/icons/socket.png";
 import vscode from "../../assets/images/icons/vscode.png";
 import Back_skills from "./background/Back_skills";
+import Loader from "react-loaders";
 
 const Skills = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
@@ -129,6 +130,7 @@ const Skills = () => {
         </div>
         <Back_skills />
       </div>
+      <Loader type="pacman" />
     </>
   );
 };

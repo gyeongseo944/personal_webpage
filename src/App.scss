@@ -1,6 +1,7 @@
 $primari-color:#ffd700;
 
 @import 'animate.css';
+@import '~loaders.css/src/animations/pacman.scss';
 
 @font-face {
   font-family: 'Helevetica Neue';
@@ -18,4 +19,33 @@ $primari-color:#ffd700;
 input,
 textarea{
   font-family: 'Helevetica Neue';
+}
+.loader-active{
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  animation: fadeOut 1s 1s;
+  animation-fill-mode: forwards;
+  .pacman{
+    div{
+      background: #ffd700;
+    }
+    div:nth-child(1){
+      background: none;
+      border-color: #ffd700;
+      border-right: 25px solid transparent;
+    }
+    div:nth-child(2){
+      background: none;
+      border-color: #ffd700;
+      border-right: 25px solid transparent;
+    }
+    
+  }
 }

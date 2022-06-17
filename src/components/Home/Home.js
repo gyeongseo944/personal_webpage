@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Loader from "react-loaders";
 import { Link } from "react-router-dom";
 import LogoG from "../../assets/images/h1_logo.png";
 import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
@@ -44,6 +45,7 @@ const Home = () => {
         </div>
         <Logo />
       </div>
+      <Loader type="pacman" />
     </div>
   );
 };

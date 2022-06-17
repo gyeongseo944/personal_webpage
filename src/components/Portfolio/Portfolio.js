@@ -4,6 +4,7 @@ import Card from "./Card/Card";
 import { Work } from "./Data/WorkData";
 import Back_port from "./Background/Back_port";
 import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
+import Loader from "react-loaders";
 
 const Portfolio = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
@@ -43,29 +44,32 @@ const Portfolio = () => {
   };
 
   return (
-    <div
-      className="container portfolio_page"
-      onMouseDown={onDragStart}
-      onMouseMove={isDrag ? onDragMove : null}
-      onMouseUp={onDragEnd}
-      onMouseLeave={onDragEnd}
-      ref={scrollRef}
-    >
-      <Back_port />
-      <div className="title">
-        <h1>
-          <AnimatedLetters letterClass={letterClass} strArray={["P", "O", "R", "T", "F", "O", "L", "I", "O"]} idx={15} />
-        </h1>
-        <span className="instruction">Please, Drag your mouse left or right !</span>
+    <>
+      <div
+        className="container portfolio_page"
+        onMouseDown={onDragStart}
+        onMouseMove={isDrag ? onDragMove : null}
+        onMouseUp={onDragEnd}
+        onMouseLeave={onDragEnd}
+        ref={scrollRef}
+      >
+        <Back_port />
+        <div className="title">
+          <h1>
+            <AnimatedLetters letterClass={letterClass} strArray={["P", "O", "R", "T", "F", "O", "L", "I", "O"]} idx={15} />
+          </h1>
+          <span className="instruction">Please, Drag your mouse left or right !</span>
+        </div>
+        <div className="work">
+          <ul ref={ref}>
+            {Work.map((d) => (
+              <Card key={d.id} data={d} />
+            ))}
+          </ul>
+        </div>
       </div>
-      <div className="work">
-        <ul ref={ref}>
-          {Work.map((d) => (
-            <Card key={d.id} data={d} />
-          ))}
-        </ul>
-      </div>
-    </div>
+      <Loader type="pacman" />
+    </>
   );
 };
 
