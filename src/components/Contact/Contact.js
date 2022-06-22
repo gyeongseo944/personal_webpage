@@ -34,7 +34,11 @@ const Contact = () => {
           <h1>
             <AnimatedLetters letterClass={letterClass} strArray={["C", "o", "n", "t", "a", "c", "t", " ", "M", "e"]} idx={15} />
           </h1>
-          <p>자기소개 자기소개</p>
+          <p>
+            신입 개발자로 아직 경험은 적지만 무엇이든 열심히 임할 자신 있습니다. <br />
+            연락을 원하시면 아래로 메일을 보내주시거나, <br />
+            왼쪽에 나와있는 번호로 전화 주시길 바랍니다.
+          </p>
           <div className="contact_form">
             <form ref={form} onSubmit={sendEmail}>
               <ul>

@@ -5,7 +5,7 @@ export const Work = [
     description: "React JS를 기반으로 제작한 개인 홈페이지로 페이지 별 다양한 애니메이션 효과 중점으로 구성",
     tags: ["react", "gsap", "draw SVG", "scss"],
 
-    demo: "/",
+    demo: "https://personal-webpage-mu.vercel.app/",
     github: "https://github.com/gyeongseo944/personal_webpage",
   },
   {
@@ -14,7 +14,7 @@ export const Work = [
     description: "React JS를 기반으로 제작한 학원 소개 홈페이지로 다양한 스크롤 애니메이션을 이용 단일 페이지 형식으로 구성 ",
     tags: ["react", "gsap", "styledComponents", "Locomotive Scroll", "Framer Motion"],
 
-    demo: "/",
+    demo: "https://actors-academy.vercel.app/",
     github: "https://github.com/gyeongseo944/actorsAcademy",
   },
   {

@@ -3,6 +3,9 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFilePdf } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import Remoview from "../Data/PDF/Remoview.pdf";
+import TuiTui from "../Data/PDF/TuiTui.pdf";
+import Adobe from "../Data/PDF/AdobeRemake.pdf";
 
 const Card = ({ data }) => {
   const { id, name, description, tags, demo, github, pdf } = data;
