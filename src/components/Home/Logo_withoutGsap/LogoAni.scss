@@ -14,7 +14,7 @@
     transform: rotateZ(20deg) !important;
     z-index: 30;
     opacity: 0;
-    animation: fadeIn 4s ease 7s 1 forwards;
+    animation: fadeIn 5s ease-in-out 6s 1 forwards;
   }
   .drawSvg{
     position: absolute;
@@ -30,7 +30,7 @@
       stroke-width: 1;
       stroke-dasharray: 1800;
       stroke-dashoffset: 1800;
-      animation: drawSvg 10s ease-in-out 1s 1 forwards;
+      animation: drawSvg 11s ease-in-out 1s 1 forwards;
     }
   }
 }

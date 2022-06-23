@@ -22,9 +22,10 @@ const About = () => {
           <h1>
             <AnimatedLetters letterClass={letterClass} strArray={["A", "b", "o", "u", "t", " ", "m", "e"]} idx={15} />
           </h1>
-          <p>자기소개 자기소개</p>
-          <p align="LEFT">자기소개 자기소개</p>
-          <p>자기소개 자기소개 (나중에 수정) &lt; 한글 폰트 찾기..</p>
+          <p>안녕하세요. 프론트엔드 &amp; 풀스택 개발자를 희망하는 신입 개발자 박경서 라고 합니다.</p>
+          <p align="LEFT">프론트엔드 개발과 관련한 경험이 적어, 이를 보완하기 위해 개인 프론트엔드 프로젝트를 제작 진행했으며,</p>
+          <p>짧지만 node js 사용 경력과 java / spring 기반의 교육과정을 수료했습니다. 이를 기반으로 풀스택 개발자, </p>
+          <p>프론트엔드 개발자로 성장 자리매김 하고 싶습니다. 부족한 실력이지만 긍정적인 검토 부탁드립니다 감사합니다</p>
         </div>
 
         <div className="stage_cube_cont">

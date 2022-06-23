@@ -3,6 +3,7 @@ import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCss3, faGitAlt, faHtml5, faJsSquare, faNode, faReact, faJava } from "@fortawesome/free-brands-svg-icons";
 import "./Skills.scss";
+import resume from "../Portfolio/Data/PDF/GyeongseoPark.pdf";
 // icon
 import spring from "../../assets/images/icons/springIcon.png";
 import maria from "../../assets/images/icons/mariadbIcon.png";
@@ -30,9 +31,16 @@ const Skills = () => {
           <h1>
             <AnimatedLetters letterClass={letterClass} strArray={["Skills", " ", "&", " ", "Experience"]} idx={15} />
           </h1>
-          <p>자기소개 자기소개</p>
-          <p align="LEFT">자기소개 자기소개</p>
-          <p>자기소개 자기소개 (나중에 수정) &lt; 한글 폰트 찾기</p>
+          <p> 2021 / 06 ~ 2022 / 01 브이알에듀 SMART본부 연구원 재직 :</p>
+          <p align="LEFT">node js 와 soket io를 이용한 실시간 데이터 통신 및 시각화 프로젝트 진행</p>
+          <p> 2020 / 03 ~ 2020 / 09 구디아카데미 교육과정 수료 : JAVA&amp;SPRING 기반 개발자 양성과정</p>
+          <p>
+            더 자세한 사항은&nbsp;&nbsp;
+            <a href={resume} target="_blank" alt="이력서보기">
+              이력서
+            </a>
+            를 참조해주세요.
+          </p>
         </div>
         <div className="skill_list">
           <ul>

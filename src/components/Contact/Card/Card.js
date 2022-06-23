@@ -2,7 +2,7 @@ import "./Card.scss";
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
-import img from "../../../assets/images/me.jpg";
+import img from "../../../assets/images/profile.png";
 import resume from "../../Portfolio/Data/PDF/GyeongseoPark.pdf";
 
 const Card = () => {

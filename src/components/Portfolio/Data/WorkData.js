@@ -5,7 +5,7 @@ export const Work = [
     description: "React JS를 기반으로 제작한 개인 홈페이지로 페이지 별 다양한 애니메이션 효과 중점으로 구성",
     tags: ["react", "gsap", "draw SVG", "scss"],
 
-    demo: "https://personal-webpage-mu.vercel.app/",
+    demo: "https://personal-webpage-beryl.vercel.app/",
     github: "https://github.com/gyeongseo944/personal_webpage",
   },
   {
