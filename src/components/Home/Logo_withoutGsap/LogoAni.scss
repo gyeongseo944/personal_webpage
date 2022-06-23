@@ -1,0 +1,46 @@
+.logo_container {
+  z-index: 80;
+  width: 50%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  .solid_logo{
+    width: 870px;
+    height: 950px;
+    position: absolute;
+    top: -4%;
+    right: 20%;
+    transform: rotateZ(20deg) !important;
+    z-index: 30;
+    opacity: 0;
+    animation: fadeIn 4s ease 7s 1 forwards;
+  }
+  .drawSvg{
+    position: absolute;
+    top: 0;
+    right: 5%;
+    width: 950px;
+    height: auto;
+    transform: rotateZ(20deg) !important;
+    // z-index: 55;
+    path{
+      fill: none;
+      stroke: #ffd700;
+      stroke-width: 1;
+      stroke-dasharray: 1800;
+      stroke-dashoffset: 1800;
+      animation: drawSvg 10s ease-in-out 1s 1 forwards;
+    }
+  }
+}
+
+
+@keyframes drawSvg {
+  0%{
+    stroke-dashoffset: 1800;
+  }
+  100%{
+    stroke-dashoffset: 0;
+  }
+}

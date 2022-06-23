@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import LogoG from "../../assets/images/h1_logo.png";
 import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
 import "./Home.scss";
-import Logo from "./Logo/Logo";
+import LogoAni from "./Logo_withoutGsap/LogoAni";
 
 const Home = () => {
   const [LetterClass, setLetterClass] = useState("text-animate");
@@ -43,7 +43,7 @@ const Home = () => {
             CONTACT ME
           </Link>
         </div>
-        <Logo />
+        <LogoAni />
       </div>
       <Loader type="pacman" />
     </div>
